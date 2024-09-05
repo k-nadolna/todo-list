@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do list</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="project">
+    <div class="part1">
+      <h2>Co mamy do zrobienia?</h2>
+      <input name="task" id="task" placeholder="zadanie">
+      <input name="person" id="person" placeholder="kto wykona?">
+      <input type="date" name="date" id="date" >
+      <input type="submit" id="submit1" value="Wyślij">
+    </div>
+
+    <div class="part2">
+      <div class="part2-header">
+        <h3>Lista zadań:</h3>
+      <div class="buttons">
+          <button type="button" id="delete-checked" title="Usuń wykonane zadania"><img src="images/bin.png"></button>
+          <button type="button" id="delete-all" title="Usuń całą listę"><img src="images/close.png"></button>
+        </div>
+       
+      </div>
+      
+      <table>
+        <tbody class="table-body">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  
+</body>
+</html>

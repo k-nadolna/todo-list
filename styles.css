@@ -1,0 +1,181 @@
+html{
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+body{
+  background: url("images/back.jpg"), rgb(49, 49, 49);
+  background-size: 100vw auto;
+  background-repeat:no-repeat;
+}
+
+h2{
+  font-family: Caveat, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 48px;
+  margin: 10px;
+}
+
+h3{
+  font-family: Caveat, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 36px;
+  margin: 10px 0px;
+}
+
+
+input{
+  border: none;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 12px 20px;
+  width: 90%;
+}
+
+table{
+  border-spacing: 0px;
+  cursor: pointer;
+}
+
+td{
+  border-bottom: solid 1px rgb(79, 79, 79);
+}
+
+.project{
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  min-height: 70vh;
+  padding: 10px 40px;
+  position: absolute;
+  top: 30px;
+  left: 10vw;
+  width: 35%;
+
+}
+
+.part1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit1{
+  background: white;
+  color: black;
+  width: 100px;
+}
+
+#submit1:hover{
+  animation: changeButton 0.5s;
+  background: linear-gradient(140deg,rgb(153, 58, 58),rgb(100, 100, 100));
+  color: rgb(227, 226, 226);
+  cursor: pointer;
+  
+}
+
+.part2{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.part2-header{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.buttons{
+  display: flex;
+  align-items: end;
+  right: 0px;
+  top: 25px;
+}
+
+#delete-all, #delete-checked{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px 2px;
+}
+
+#delete-checked img{
+  height: 25px;
+}
+
+#delete-all img{
+  height: 20px;
+}
+
+#delete-checked img:hover, #delete-all img:hover,  .img-close:hover{
+  transform: scale(1.15);
+}
+
+.close-button{
+  display: flex;
+  justify-content: end;
+}
+
+.img-close{
+  height: 16px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+
+
+
+.checked{
+  /* background-color: rgba(71, 70, 70, 0.5); */
+  border-radius: 50px;
+  color: rgb(108, 108, 108);
+  text-decoration: line-through;
+}
+
+@keyframes changeButton {
+  from {background: white;
+        color: black;
+      }
+  to {background: linear-gradient(140deg,rgb(153, 58, 58),rgb(100, 100, 100));
+    color: rgb(227, 226, 226);
+  }
+}
+
+@font-face {
+  font-family: Caveat ;
+  src: url(fonts/Caveat-Regular.ttf);
+}
+
+@media screen and (max-width: 768px){
+  body{
+    background-size: 130vw auto;
+  }
+
+  .project{
+    margin: 20px auto;
+    padding: 20px;
+    position: static;
+    width: 80%;
+
+  }
+}
+
+@media screen and (max-width: 576px){
+  html{
+    font-size: 14px;
+  }
+
+  body{
+    background-size: auto 100vh;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+
+  h3{
+    font-size: 24px;
+  }
+}
